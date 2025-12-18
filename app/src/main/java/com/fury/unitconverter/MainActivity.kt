@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 val pounds = kgs * 2.20462
 
                 // 4. Display the result in the TextView
-                resultText.text = "$pounds Pounds"
+                resultText.text = "%.4f Pounds".format(pounds)
             } else {
                 // If the user typed nothing or non-numbers
                 resultText.text = "Please enter a valid number"
